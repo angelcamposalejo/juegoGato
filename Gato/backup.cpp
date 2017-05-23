@@ -31,9 +31,23 @@ void Gato::btA_Click(Win::Event& e)
 {
 	btA.Text = salida(btA.Text);
 	btA.Enabled = false;
-	if (btA.Text == btB.Text&&btA.Text == btC.Text)
+	if ((btA.Text==btB.Text)&&(btA.Text==btC.Text))
 	{
 		lb1.Text = L"Ganador " + btA.Text;
+	}
+	else
+	{
+		if ((btA.Text == btD.Text) && (btA.Text == btG.Text))
+		{
+			lb1.Text = L"Ganador " + btA.Text;
+		}
+		else
+		{
+			if ((btA.Text == btE.Text) && (btA.Text == btI.Text))
+			{
+				lb1.Text = L"Ganador " + btA.Text;
+			}
+		}
 	}
 }
 
@@ -41,47 +55,181 @@ void Gato::btB_Click(Win::Event& e)
 {
 	btB.Text = salida(btB.Text);
 	btB.Enabled = false;
+	if ((btA.Text == btB.Text) && (btA.Text == btC.Text))
+	{
+		lb1.Text = L"Ganador " + btA.Text;
+	}
+	else
+	{
+		if ((btB.Text == btE.Text) && (btB.Text == btH.Text))
+		{
+			lb1.Text = L"Ganador " + btB.Text;
+		}
+	}
 }
 
 void Gato::btC_Click(Win::Event& e)
 {
 	btC.Text = salida(btC.Text);
 	btC.Enabled = false;
+	if ((btA.Text == btB.Text) && (btA.Text == btC.Text))
+	{
+		lb1.Text = L"Ganador " + btA.Text;
+	}
+	else
+	{
+		if ((btC.Text == btF.Text) && (btC.Text == btI.Text))
+		{
+			lb1.Text = L"Ganador " + btC.Text;
+		}
+		else
+		{
+			if ((btC.Text == btE.Text) && (btC.Text == btG.Text))
+			{
+				lb1.Text = L"Ganador " + btC.Text;
+			}
+		}
+	}
 }
 
 void Gato::btD_Click(Win::Event& e)
 {
 	btD.Text = salida(btD.Text);
 	btD.Enabled = false;
+	if ((btD.Text == btE.Text) && (btD.Text == btF.Text))
+	{
+		lb1.Text = L"Ganador " + btD.Text;
+	}
+	else
+	{
+		if ((btA.Text == btD.Text) && (btA.Text == btG.Text))
+		{
+			lb1.Text = L"Ganador " + btA.Text;
+		}
+	}
 }
 
 void Gato::btE_Click(Win::Event& e)
 {
 	btE.Text = salida(btE.Text);
 	btE.Enabled = false;
+	if ((btD.Text == btE.Text) && (btD.Text == btF.Text))
+	{
+		lb1.Text = L"Ganador " + btD.Text;
+	}
+	else
+	{
+		if ((btB.Text == btE.Text) && (btB.Text == btH.Text))
+		{
+			lb1.Text = L"Ganador " + btB.Text;
+		}
+		else
+		{
+			if ((btA.Text == btE.Text) && (btA.Text == btI.Text))
+			{
+				lb1.Text = L"Ganador " + btA.Text;
+			}
+			else
+			{
+				if ((btC.Text == btE.Text) && (btC.Text == btG.Text))
+				{
+					lb1.Text = L"Ganador " + btC.Text;
+				}
+			}
+		}
+	}
 }
 
 void Gato::btF_Click(Win::Event& e)
 {
 	btF.Text = salida(btF.Text);
 	btF.Enabled = false;
+	if ((btD.Text == btE.Text) && (btD.Text == btF.Text))
+	{
+		lb1.Text = L"Ganador " + btD.Text;
+	}
+	else
+	{
+		if ((btC.Text == btF.Text) && (btC.Text == btI.Text))
+		{
+			lb1.Text = L"Ganador " + btC.Text;
+		}
+	}
 }
 
 void Gato::btG_Click(Win::Event& e)
 {
 	btG.Text = salida(btG.Text);
 	btG.Enabled = false;
+	if ((btG.Text == btH.Text) && (btG.Text == btI.Text))
+	{
+		lb1.Text = L"Ganador " + btG.Text;
+	}
+	else
+	{
+		if ((btA.Text == btD.Text) && (btA.Text == btG.Text))
+		{
+			lb1.Text = L"Ganador " + btA.Text;
+		}
+		else
+		{
+			if ((btC.Text == btE.Text) && (btC.Text == btG.Text))
+			{
+				lb1.Text = L"Ganador " + btC.Text;
+			}
+			else
+			{
+				if ((btC.Text == btE.Text) && (btC.Text == btG.Text))
+				{
+					lb1.Text = L"Ganador " + btC.Text;
+				}
+			}
+		}
+	}
 }
 
 void Gato::btH_Click(Win::Event& e)
 {
 	btH.Text = salida(btH.Text);
 	btH.Enabled = false;
+	if ((btG.Text == btH.Text) && (btG.Text == btI.Text))
+	{
+		lb1.Text = L"Ganador " + btG.Text;
+	}
+	else
+	{
+		if ((btB.Text == btE.Text) && (btB.Text == btH.Text))
+		{
+			lb1.Text = L"Ganador " + btB.Text;
+		}
+	}
 }
 
 void Gato::btI_Click(Win::Event& e)
 {
 	btI.Text = salida(btI.Text);
 	btI.Enabled = false;
+	if ((btG.Text == btH.Text) && (btG.Text == btI.Text))
+	{
+		lb1.Text = L"Ganador " + btG.Text;
+	}
+	else
+	{
+		if ((btC.Text == btF.Text) && (btC.Text == btI.Text))
+		{
+			lb1.Text = L"Ganador " + btC.Text;
+		}
+		else
+		{
+			if ((btA.Text == btE.Text) && (btA.Text == btI.Text))
+			{
+				lb1.Text = L"Ganador " + btA.Text;
+			}
+		}
+	}
+}
+
+void Gato::bt10_Click(Win::Event& e)
+{
 }
 

@@ -22,12 +22,13 @@ protected:
 	Win::Button btH;
 	Win::Button btI;
 	Win::Label lb1;
+	Win::Button bt10;
 protected:
 	Win::Gdi::Font fontArial014A;
 	void GetDialogTemplate(DLGTEMPLATE& dlgTemplate)
 	{
 		dlgTemplate.cx = Sys::Convert::PixelToDlgUnitX(323);
-		dlgTemplate.cy = Sys::Convert::PixelToDlgUnitY(183);
+		dlgTemplate.cy = Sys::Convert::PixelToDlgUnitY(195);
 		dlgTemplate.style = WS_CAPTION | WS_POPUP | WS_SYSMENU | WS_VISIBLE | DS_CENTER | DS_MODALFRAME;
 	}
 	//_________________________________________________
@@ -43,7 +44,8 @@ protected:
 		btG.Create(NULL, NULL, WS_CHILD | WS_TABSTOP | WS_VISIBLE | BS_PUSHBUTTON | BS_CENTER | BS_VCENTER, 18, 112, 87, 28, hWnd, 1006);
 		btH.Create(NULL, NULL, WS_CHILD | WS_TABSTOP | WS_VISIBLE | BS_PUSHBUTTON | BS_CENTER | BS_VCENTER, 126, 113, 87, 28, hWnd, 1007);
 		btI.Create(NULL, NULL, WS_CHILD | WS_TABSTOP | WS_VISIBLE | BS_PUSHBUTTON | BS_CENTER | BS_VCENTER, 230, 113, 86, 28, hWnd, 1008);
-		lb1.Create(NULL, L"Juego del Gato", WS_CHILD | WS_VISIBLE | SS_LEFT | SS_WINNORMAL, 231, 151, 83, 25, hWnd, 1009);
+		lb1.Create(NULL, L"Juego del Gato", WS_CHILD | WS_VISIBLE | SS_LEFT | SS_WINNORMAL, 231, 151, 83, 37, hWnd, 1009);
+		bt10.Create(NULL, NULL, WS_CHILD | WS_TABSTOP | WS_VISIBLE | BS_PUSHBUTTON | BS_CENTER | BS_VCENTER, 127, 158, 86, 27, hWnd, 1010);
 		fontArial014A.Create(L"Arial", 14, false, false, false, false);
 		btA.Font = fontArial014A;
 		btB.Font = fontArial014A;
@@ -55,6 +57,7 @@ protected:
 		btH.Font = fontArial014A;
 		btI.Font = fontArial014A;
 		lb1.Font = fontArial014A;
+		bt10.Font = fontArial014A;
 	}
 	//_________________________________________________
 	void btA_Click(Win::Event& e);
@@ -66,6 +69,7 @@ protected:
 	void btG_Click(Win::Event& e);
 	void btH_Click(Win::Event& e);
 	void btI_Click(Win::Event& e);
+	void bt10_Click(Win::Event& e);
 	void Window_Open(Win::Event& e);
 	//_________________________________________________
 	bool EventHandler(Win::Event& e)
@@ -79,6 +83,7 @@ protected:
 		if (btG.IsEvent(e, BN_CLICKED)) {btG_Click(e); return true;}
 		if (btH.IsEvent(e, BN_CLICKED)) {btH_Click(e); return true;}
 		if (btI.IsEvent(e, BN_CLICKED)) {btI_Click(e); return true;}
+		if (bt10.IsEvent(e, BN_CLICKED)) {bt10_Click(e); return true;}
 		return false;
 	}
 };

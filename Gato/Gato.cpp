@@ -31,7 +31,7 @@ void Gato::btA_Click(Win::Event& e)
 {
 	btA.Text = salida(btA.Text);
 	btA.Enabled = false;
-	if ((btA.Text==btB.Text)&&(btA.Text==btC.Text))
+	if ((btA.Text == btB.Text) && (btA.Text == btC.Text))
 	{
 		lb1.Text = L"Ganador " + btA.Text;
 	}
@@ -227,5 +227,29 @@ void Gato::btI_Click(Win::Event& e)
 			}
 		}
 	}
+}
+
+void Gato::btReinicio_Click(Win::Event& e)
+{
+	contador = 0;
+	btA.Text = L"";
+	btB.Text = L"";
+	btC.Text = L"";
+	btD.Text = L"";
+	btE.Text = L"";
+	btF.Text = L"";
+	btG.Text = L"";
+	btH.Text = L"";
+	btI.Text = L"";
+	lb1.Text = L"Juego de Gato";
+	btA.Enabled = true;
+	btB.Enabled = true;
+	btC.Enabled = true;
+	btD.Enabled = true;
+	btE.Enabled = true;
+	btF.Enabled = true;
+	btG.Enabled = true;
+	btH.Enabled = true;
+	btI.Enabled = true;
 }
 
